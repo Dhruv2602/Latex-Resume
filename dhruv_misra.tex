@@ -1,0 +1,100 @@
+\documentclass[]{dhruv_misra}
+
+\usepackage{amsmath}
+\usepackage{fontawesome}
+\usepackage[colorlinks=false, linktocpage=true]{hyperref}
+\hypersetup{pdfborderstyle={/S/U/W 0}} 
+
+\begin{document}
+
+	\name{\huge {Dhruv Misra}}
+    	\addrstreet{777 Hamilton Ave}
+    	\addrcity{Menlo Park, CA 94025}
+    	\linkedinandgithub{\href{https://www.linkedin.com/in/dhruv-misra}{linkedin.com/in/dhruv-misra} | \href{https://www.github.com/Dhruv2602}{github.com/dhruv2602}}
+    	\contacts{\href{tel:5124131744}{(512)-413-1744} }
+    	 \mail{\href{mailto://dhruv.misra100@gmail.com}{dhruv.misra100@gmail.com}}
+	\makeheader
+	
+	
+	\begin{cvsection}{Experience}
+        \begin{cvsubsection}{Associate Software Engineer}{Nexla, Millbrae, CA}{Jan 2018 - Present}
+			\begin{itemize}
+				\item Built backend for a dashboard to inform data pipeline's current status to the user, using Python \& Javascript transform functions.
+				\item Responsible for getting source and sink database Kafka connectors ready for production to facilitate ingestion from databases into the platform and writing into Couchbase, an open-source distributed multi-model NoSQL database.
+				\item Incorporated schema detection from metadata for Avro and Parquet files and added various REST endpoints like exposing our current Kafka offsets, creating new Kafka topics and fetching Redis cache contents.
+				\item Debugged and resolved issues with null-value updates to records by implementing an in-memory upsert(insert or update).
+			\end{itemize}
+	    \end{cvsubsection}
+	    
+        \begin{cvsubsection}{Software Engineer, Intern}{Nexla, Millbrae, CA}{Jun 2017 - Aug 2017}
+			\begin{itemize}
+				\item Created a new schema accumulator that recursively combines schema selecting data type with highest frequency in the ingested data. 
+				\item Developed a data source monitoring tool using jOOQ to query a MySQL Database, which aggregates data, performs statistical analysis on data metrics and triggers alerts in case of an anomaly in the amount or frequency of incoming data.
+				\item Built an Excel parser that uses heuristics to collect readable tabular data from an Excel document and converts it into an internal data representation by extracting only the largest tables in the entire document.
+			\end{itemize}
+	    \end{cvsubsection}
+	    
+	    \begin{cvsubsection}{Summer Research Intern}{National Institute of Technology, India}{May 2014 - Aug 2014}
+			\begin{itemize}
+				\item Implemented a new group Diffie-Hellman algorithm using a Binary Tree to store group keys, which efficiently computes keys in case of frequent additions and removals in the group.
+			\end{itemize}
+	    \end{cvsubsection}
+	    
+	    \begin{cvsubsection}{Software Engineer, Intern}{Steel Authority of India Ltd., India}{May 2013 - Aug 2013}
+			\begin{itemize}
+				\item  Developed a full-stack application, Employee Family Benefits System using Visual Basic and MySQL that manages immediate employment of the dependent, in case of a deceased employee. 
+				\item This application facilitates employment to the employees' dependants in one of India's largest employers, with 200,000 employees.
+			\end{itemize}
+	    \end{cvsubsection}
+	\end{cvsection}
+	
+	
+	\begin{cvsection}{Projects}
+		\begin{cvsubsection}{Movie Recommendation System [Python]}{}{2017}
+			\begin{itemize}
+				\item Built a recommendation system using user-based and item-based collaborative filtering on the Netflix Prize dataset, containing over 100 million ratings from 480,000 randomly-chosen, anonymous customers over 17,000 movie titles using Python's scikit-learn library.
+				\item Reduced dimensionality of the dataset by Principal Component Analysis and created over 10,000 sub matrices.
+				\item Predicted and assigned grades to all triplets of <user, movie, date of grade> by training against the dataset with label grade.
+				\item Implemented classification based on K-Nearest Neighbors, Logistic Regression, Naive Bayes Classifier and Support Vector Machines and achieved accuracy of 91\% with an ensemble model.
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Spatio-Temporal Data Analysis [Apache Spark]}{}{2016}
+			\begin{itemize}
+				\item Used Map Reduce and GeoSpark Spatial Join to identify spatially significant hotspots in New York City, using taxi drop off frequencies on "Taxi \& Limousine Commission" dataset, spanning over 7 years with over 2 million data points.
+   				\item Extracted drop off frequencies from the dataset composed of multiple attributes, and achieved a compression ratio of 2.4 by reducing the size of dataset by 70\% thus reducing file size from 24 GB to 10 GB.
+   				\item Predicted 46 out of the top 50 significant hotspots expected from the dataset in 6 hours using Spark, running on 3 machines in parallel.
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Hypermedia Driven RESTful Gradebook [Java]}{}{2016}
+			\begin{itemize}
+				\item Designed and developed a stateful grading application using Java with Maven that allows professors to grade students on a course.
+				\item Created users, roles, public groups and implemented role hierarchies, sharing rules and record level permissions to provide shared access among different users, allowing the professor to make changes to the grade on a successful appeal by a student.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	
+	\begin{cvsection}{Education}
+		\begin{cvsubsection}{Tempe, Arizona}{Arizona State University}{Jan 2016 - Dec 2017}
+			\begin{itemize}
+				\item M.S. in Computer Science. GPA: 3.83.
+		\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Manipal, India}{Manipal Institute of Technology}{Aug 2011 - May 2015}
+			\begin{itemize}
+				\item B. Tech. in Computer Science. GPA: 7.21.
+		\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	\textbf{\:\: Relevant Coursework:} Algorithms, Distributed Databases, Distributed Software Development, Statistical Machine Learning.
+
+
+	\begin{cvsection}{Skills}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item \textbf{Languages: } Java, Python, C++, C\#, SQL, Bash
+				\item \textbf{Tools/Frameworks: } IntelliJ by Jetbrains, Maven, Git, Kafka, Jenkins, JIRA, Agile - Scrum Methodology, Linux
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+\end{document}
